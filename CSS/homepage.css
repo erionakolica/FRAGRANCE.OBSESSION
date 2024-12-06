@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #c3b9e6;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .search{
+    width: 100%;
+    text-align:start ;
+  }
+  .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color:#000;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #c3b9e6;
+    text-align: center;
+  }
+  .hero-content img{
+    width: 250px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  } 
+  
+  input{
+    color: #c3b9e6;
+    background-color: transparent;
+    border-bottom:2px solid #c3b9e6;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+  }
+  .slider-container {
+      position: relative;
+      width: 900px;
+      height: 450px;
+      overflow: hidden;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: white;
+      margin: auto;
+      margin-top: 100px;
+    }
+    
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      min-width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      color: black;
+    }
+    
+    .slide img{
+      width: 850px;
+      height: 410px;
+    }
+    
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      /* background-color: balck; */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1.5em;
+      border-radius: 5px;
+    }
+    
+    button:hover {
+      background-color: #c3b9e6;
+      color: black;
+    }
+    
+    .prev {
+      left: 10px;
+    }
+    
+    .next {
+      right: 10px;
+    }
+    
+  footer {
+      background-color: #000;
+      color: #c3b9e6;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 90px;
+  }
+  
+  footer span{
+    font-weight: bold;
+  }
