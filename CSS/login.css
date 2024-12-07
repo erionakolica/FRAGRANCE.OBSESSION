@@ -1,4 +1,3 @@
-/* Stilimi bazë */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Navbar */
 header {
     background-color: #000;
     display: flex;
@@ -40,12 +38,10 @@ nav a.active {
     color: #fff;
 }
 
-/* Login form */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 200px); /* Llogarit hapësirën për navbar dhe footer */
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -118,7 +114,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     background-color: #000;
     color: #c3b9e6;
