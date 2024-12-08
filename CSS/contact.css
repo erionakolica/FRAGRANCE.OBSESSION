@@ -63,8 +63,9 @@ nav a.active {
     top: 5px;
 } 
 
+
 .contact-form {
-    max-width: 600px;
+    width: 50%;
     margin: 50px auto;
     background-color: #000;
     color: #c3b9e6;
@@ -88,7 +89,6 @@ nav a.active {
     border: none;
     border-radius: 5px;
     resize: vertical;
-
 }
 
 .contact-form input, .contact-form textarea {
@@ -103,7 +103,7 @@ nav a.active {
     color: #000;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 10px;
+    width: 100%;
 }
 
 .contact-form button:hover {
@@ -117,10 +117,11 @@ nav a.active {
 }
 
 .map-container iframe {
-    border: 0;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    border: 5px solid #000;
     border-radius: 10px;
-    width: 800px;
-    height: 400px;
 }
 
 footer {
@@ -128,9 +129,52 @@ footer {
     color: #c3b9e6;
     text-align: center;
     padding: 10px 0;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
-footer span{
-  font-weight: bold;
+footer span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .map-container iframe {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; 
+    }
+
+    nav ul {
+        display: flex; 
+    }
 }

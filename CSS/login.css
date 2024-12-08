@@ -1,3 +1,4 @@
+/* Stilet bazë */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -61,7 +62,7 @@ nav a.active {
     align-items: center;
     position: absolute;
     top: 5px;
-} 
+}
 
 main {
     display: flex;
@@ -148,4 +149,42 @@ footer {
 
 footer span {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
 }

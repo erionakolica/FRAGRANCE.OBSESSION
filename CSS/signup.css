@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: relative;
 }
 
 .logo {
@@ -61,13 +62,21 @@ nav a.active {
     align-items: center;
     position: absolute;
     top: 5px;
-} 
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    width: 30px;
+}
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     padding: 20px;
 }
 
@@ -120,31 +129,37 @@ button {
     font-weight: bold;
 }
 
+.link{
+    text-decoration: none;    
+    color: #c3b9e6;
+}
+
 button:hover {
     background-color: #fff;
 }
 
-.redirect {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
 
-.redirect a {
-    color: #c3b9e6;
-    text-decoration: none;
-}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
 
-.redirect a:hover {
-    text-decoration: underline;
-}
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
 
-footer {
-    background-color: #000;
-    color: #c3b9e6;
-    text-align: center;
-    padding: 10px 0;
-}
+    nav ul.active {
+        display: flex;
+    }
 
-footer span {
-    font-weight: bold;
+    nav li {
+        margin: 10px 0;
+    }
 }
