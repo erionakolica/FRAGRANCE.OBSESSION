@@ -64,7 +64,11 @@ nav a.active {
 } 
 
 main{
-    margin-left: 140px;
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;  
 }
 
 .product {
@@ -124,4 +128,88 @@ footer {
 
 footer span {
     font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #000;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        display: none; 
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    nav ul.show {
+        display: block;  
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .cart {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #000;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: start;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+
+    nav ul {
+        display: none;  
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #000;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: end;
+    }
+
+    nav ul.show {
+        display: block; 
+    }
 }
